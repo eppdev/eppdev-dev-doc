@@ -136,6 +136,13 @@ bin/hdfs namenode -format
 sbin/start-dfs.sh
 ~~~
 
+启动yarn服务：
+
+~~~shell
+sbin/start-yarn.sh
+~~~
+
+
 通过浏览器访问yarn和hdfs的web界面，即可确认是否正常安装：
 
 * hdfs web访问地址：http://localhost:50070/
@@ -247,6 +254,8 @@ Logging initialized using configuration in jar:file:/Users/jinlong.hao/Project/0
 OK
 Time taken: 3.46 seconds
 ~~~
+
+> 注意hive的执行需要hadoop为启动状态，需要启动的组件至少要包括dfs和yarn两个
 
 ## 服务启动
 
